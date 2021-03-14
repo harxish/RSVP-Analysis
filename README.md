@@ -17,3 +17,16 @@ Meetup is a service used to organize online groups that host in-person and virtu
 ## Technology Stack
 
 - [WebSocket](https://websocket-client.readthedocs.io/en/latest/index.html) - Library used to read JSON response from meetup website.
+<br><br>
+
+## Prerequisites
+
+- Apache Kafka
+- Apache Spark
+<br><br>
+
+## How to install
+
+``$> pipenv install --ignore-pipfile``
+<br>or<br>
+``$> pip install -r requirements.txt``
