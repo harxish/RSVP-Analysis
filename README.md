@@ -23,8 +23,8 @@ Meetup is a service used to organize online groups that host in-person and virtu
 
 ## Prerequisites
 
-- Apache Kafka
-- Apache Spark
+- Apache Kafka 2.6.1
+- Apache Spark 2.4.7
 <br><br>
 
 ## How to install
