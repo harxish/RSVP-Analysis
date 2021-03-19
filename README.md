@@ -30,3 +30,17 @@ Meetup is a service used to organize online groups that host in-person and virtu
 ``$> pipenv install --ignore-pipfile``
 <br>or<br>
 ``$> pip install -r requirements.txt``
+<br><br>
+
+## How to Run
+
+```
+./bin/zookeeper-server-start.sh config/zookeeper.properties
+./bin/kafka-server-start.sh config/server.properties
+
+pipenv run python3 kafka_producer.py
+```
+
+```
+/opt/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.0.0 spark_streaming_kafka.py
+```
