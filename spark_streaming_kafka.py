@@ -7,8 +7,8 @@ ssc = StreamingContext(sc, 2)
 
 brokers, topic = 'localhost:9092', 'meetup-rsvp'
 kvs = KafkaUtils.createDirectStream(ssc, [topic], {'metadata.broker.list': brokers})
-meetups = kvs.map(lambda x: eval(x[1]))
+# meetups = kvs.map(lambda x: eval(x[1]))
 
-meetups.pprint()
+kvs.pprint()
 ssc.start()
 ssc.awaitTermination()
