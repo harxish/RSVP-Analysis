@@ -45,4 +45,5 @@ pipenv run python3 kafka_producer.py
 
 ```
 /opt/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.0.0 spark_streaming_kafka.py
+~/spark/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.1 spark_structured_streaming.py
 ```
