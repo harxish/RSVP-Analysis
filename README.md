@@ -28,3 +28,8 @@ Meetup is a service used to organize online groups that host in-person and virtu
 
 1. Run the core ipynb to start the listening, process and upload it to the RDS server.
 2. Run the plot ipynb to read data from RDS and plot it using matplotlib.
+<br><br>
+
+## Issues
+
+Open an issue if you get any problem working with it :)
