@@ -20,7 +20,11 @@ Meetup is a service used to organize online groups that host in-person and virtu
 - [WebSocket](https://websocket-client.readthedocs.io/en/latest/index.html) - Library used to read JSON response from meetup website.
 - [Kafka](https://kafka.apache.org/) - Used to collect the responses from the WebSocket module and add it to the meetup-rsvp topic.
 - [Spark Streaming](https://spark.apache.org/streaming/) - Used to Stream data from the Kafka Topic
+- [Amazon RDS](https://aws.amazon.com/rds/) - Store the streaming processed data to plot.
+- [Matplotlib](https://matplotlib.org/) - Plot the processed data from RDS.
 <br><br>
 
 ## How to Run
 
+1. Run the core ipynb to start the listening, process and upload it to the RDS server.
+2. Run the plot ipynb to read data from RDS and plot it using matplotlib.
